@@ -1,0 +1,62 @@
+The matrix divided module
+===========================
+
+A test file for a function that divides all elements of a matrix.
+--------------------------------------------------------------------
+
+Importing matrix_divided from 2-matrix_divided
+
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Usage:
+
+Simple basic error-free matrix
+
+	>>> matrix = [
+	...	[1, 2, 3],
+	...	[4, 5, 6]
+	... ]
+	>>> print(matrix_divided(matrix, 3))
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Matrix is a list lists of integeres, floats, or strings.
+
+	>>> matrix = [
+	...	[1, 2, "hi"],
+	...	[4, 5, 6]
+        ... ]
+        >>> print(matrix_divided(matrix, 3))
+	Traceback(most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+	>>> matrix = [
+	...	[1, 2, 3, 7],
+	...	[4, 5, 6]
+	... ]
+        >>> print(matrix_divided(matrix, 3))
+	Traceback(most recent call last):
+	TypeError: Each row of the matrix must have the same size
+
+	>>> matrix = [
+	...	[1, 2, 3],
+	...	[4, 5, 6]
+	... ]
+        >>> print(matrix_divided(matrix, None)
+	Traceback(most recent call last):
+	TypeError: div must be a number
+
+	>>> matrix = [
+	...	[1, 2, 3],
+	...	[4, 5, 6]
+	... ]
+        >>> print(matrix_divided(matrix, "hello"))
+	Traceback(most recent call last):
+	TypeError: div must be a number
+
+	>>> matrix = [
+	...	[1, 2, 3],
+	...	[4, 5, 6]
+	... ]
+        >>> print(matrix_divided(matrix, 0))
+	Traceback(most recent call last):
+	ZeroDivisionError: division by zero
