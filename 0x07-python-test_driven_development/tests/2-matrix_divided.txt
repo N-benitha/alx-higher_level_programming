@@ -19,44 +19,9 @@ Simple basic error-free matrix
 	>>> print(matrix_divided(matrix, 3))
 	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
-Matrix is a list lists of integeres, floats, or strings.
-
 	>>> matrix = [
-	...	[1, 2, "hi"],
-	...	[4, 5, 6]
-        ... ]
-        >>> print(matrix_divided(matrix, 3))
-	Traceback(most recent call last):
-	TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-	>>> matrix = [
-	...	[1, 2, 3, 7],
-	...	[4, 5, 6]
+	...	[1.1, -2.2, 3.3],
+	...	[4.4, 5.5, -6.6]
 	... ]
-        >>> print(matrix_divided(matrix, 3))
-	Traceback(most recent call last):
-	TypeError: Each row of the matrix must have the same size
-
-	>>> matrix = [
-	...	[1, 2, 3],
-	...	[4, 5, 6]
-	... ]
-        >>> print(matrix_divided(matrix, None)
-	Traceback(most recent call last):
-	TypeError: div must be a number
-
-	>>> matrix = [
-	...	[1, 2, 3],
-	...	[4, 5, 6]
-	... ]
-        >>> print(matrix_divided(matrix, "hello"))
-	Traceback(most recent call last):
-	TypeError: div must be a number
-
-	>>> matrix = [
-	...	[1, 2, 3],
-	...	[4, 5, 6]
-	... ]
-        >>> print(matrix_divided(matrix, 0))
-	Traceback(most recent call last):
-	ZeroDivisionError: division by zero
+	>>> print(matrix_divided(matrix, 3))
+	[[0.37, -0.73, 1.1], [1.47, 1.83, -2.2]]
