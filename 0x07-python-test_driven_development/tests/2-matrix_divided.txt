@@ -92,6 +92,11 @@ Matrix is a list lists of integeres, floats, or strings.
 	Traceback (most recent call last):
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+	>>> matrix = [1, 2, 3]
+	>>> print(matrix_divided(matrix, 3))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 	>>> matrix = "not a list"
 	>>> print(matrix_divided(matrix, 3))
 	Traceback (most recent call last):
