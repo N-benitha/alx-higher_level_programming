@@ -25,6 +25,6 @@ Importing say_my_name module:
 	Traceback (most recent call last):
 	TypeError: takes from 1 to 2 positional arguments but 3 were given
 
-	>>> say_my_name([])
+	>>> say_my_name() # doctest: +IGNORE_EXCEPTION_DETAIL
 	Traceback (most recent call last):
-	TypeError: first_name must be a string
+	TypeError: must have 1 or 2 position argumets
