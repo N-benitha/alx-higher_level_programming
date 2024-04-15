@@ -132,3 +132,8 @@ Matrix is a list lists of integeres, floats, or strings.
 	... ]
 	>>> print(matrix_divided(matrix, 3))
 	[[inf, inf, inf], [inf, inf, inf]]
+
+	>>> matrix = [[]]
+	>>> print(matrix_divided(matrix, 3))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
