@@ -1,0 +1,22 @@
+Say my name test file
+=============================
+
+Prints first and last name
+------------------------------
+
+Importing say_my_name module:
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> say_my_name("Benitha", "Ngunga")
+	My name is Benitha Ngunga
+
+	>>> say_my_name("Ceaser")
+	My name is Ceaser 
+
+	>>> say_my_name(11, "Ceaser")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name("Ceaser", 11) # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	TypeError: last_name must be a string 
