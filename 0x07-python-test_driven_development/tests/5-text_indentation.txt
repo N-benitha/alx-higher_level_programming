@@ -25,3 +25,7 @@ Importing the text indentation module
 	>>> text_indentation(45)
 	Traceback (most recent call last):
 	TypeError: text must be a string
+
+	>>> text_indentation() # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	TypeError: must have 1 position argument
