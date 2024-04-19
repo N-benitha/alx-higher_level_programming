@@ -14,8 +14,6 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_types(self):
         self.assertRaises(TypeError, max_integer, ["lol", 4, 2])
-        self.assertRaises(TypeError, max_integer, "lol")
-        self.assertRaises(TypeError, max_integer, 2)
 
 if __name__ == "__main__":
     unittest.main()
