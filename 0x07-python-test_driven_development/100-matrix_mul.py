@@ -86,7 +86,7 @@ def matrix_mul(m_a, m_b):
             if i1 == len(m_b) - 1:
                 i1 = 0
                 i2 += 1
-                r2.append(num)
+                r2.append(round(num, 2))
                 num = 0
             else:
                 i1 += 1
