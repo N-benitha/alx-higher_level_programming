@@ -69,13 +69,23 @@ if __name__ == "__main__":
 
     try:
         total = 0
+        n = 0
         status_codes = \
             {code: 0 for code in [200, 301, 400, 401, 403, 404, 405, 500]}
-        for n, line in enumerate(sys.stdin, 1):
+    
+
+        for line in sys.stdin:
             try:
                 words = line.split()
+                if len(words) < 7:
+                    continue
+
                 total += int(words[-1])
-                status_codes[int(words[-2])] += 1
+                status_code = int(words[-2])
+                if status_code in status_codes:
+                    status_codes[status_code] += 1
+                n += 1
+
             except (IndexError, ValueError):
                 continue
 
